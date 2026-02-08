@@ -10,6 +10,8 @@ import imgImage190 from 'figma:asset/5f1af89856aef65d1b868e8219fddf2446fec50b.pn
 import imgImage189 from 'figma:asset/e2ace24a2f436bfdff66fee0efc67986b23bea69.png';
 import imgImage193 from 'figma:asset/daf1651f8cbfbc84a76190121c487237936e8e2c.png';
 import imgBoardWithCactusAndPhone15313006711 from 'figma:asset/1283a766b980685a64313cdeb5ba880f6d1b751a.png';
+import whyStandardVideo from '@/assets/why-standard-video.mp4';
+import whyProVideo from '@/assets/why-pro-video.mp4';
 
 
 import {
@@ -431,15 +433,25 @@ export default function CaseStutyMondayConent() {
         {/* Why Standard / Why Pro boxes — under plan comparison image */}
         <div className="max-w-5xl mx-auto px-6 md:px-8 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            <div className="bg-[#d0d0d1] rounded-2xl aspect-[5/2] flex items-center justify-center p-6">
-              <p className="text-base md:text-lg lg:text-xl text-black">
-                Why Standard
-              </p>
+            <div className="bg-[#d0d0d1] rounded-2xl overflow-hidden flex items-center justify-center">
+              <video
+                src={whyStandardVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="bg-[#d0d0d1] rounded-2xl aspect-[5/2] flex items-center justify-center p-6">
-              <p className="text-base md:text-lg lg:text-xl text-black">
-                Why pro
-              </p>
+            <div className="bg-[#d0d0d1] rounded-2xl overflow-hidden flex items-center justify-center">
+              <video
+                src={whyProVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
